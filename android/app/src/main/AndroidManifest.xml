@@ -16,6 +16,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="testflutter"
         android:icon="@mipmap/ic_launcher">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

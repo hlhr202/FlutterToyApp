@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "model/student.dart";
 import "service/student.dart";
+import "search/api.dart";
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -14,6 +15,8 @@ class _MyHomePageState extends State<MyHomePage> {
   var _counter = 0;
 
   void _incrementCounter() {
+    searchByString(
+        SearchQuery(queryString: "Genkagaku", limit: '20', offset: '0'));
     studentService.updateStudent();
     setState(() {
       _counter++;

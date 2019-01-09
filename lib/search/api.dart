@@ -5,7 +5,7 @@ class SearchQuery extends APIQueryBase {
   final String limit;
   final String offset;
 
-  SearchQuery({this.queryString, this.limit, this.offset});
+  const SearchQuery({this.queryString, this.limit, this.offset});
 }
 
 searchByString(SearchQuery searchQuery) async {

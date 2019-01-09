@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     searchByString(
-        SearchQuery(queryString: "Genkagaku", limit: '20', offset: '0'));
+        const SearchQuery(queryString: "Genkagaku", limit: '20', offset: '0'));
     studentService.updateStudent();
     setState(() {
       _counter++;
@@ -63,9 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: RaisedButton(
                 color: Colors.deepOrangeAccent,
                 onPressed: _reset,
-                child: Text(
+                child: const Text(
                   "Reset",
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
             )
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

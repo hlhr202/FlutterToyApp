@@ -3,7 +3,7 @@ import "package:rxdart/subjects.dart";
 // import 'dart:convert';
 
 class StudentService {
-  final subject = new PublishSubject<Student>();
+  final subject = PublishSubject<Student>();
 
   // Try with async fetch
   Future<Student> fetchStudent() async {
@@ -25,4 +25,4 @@ class StudentService {
   }
 }
 
-final studentService = new StudentService();
+final studentService = StudentService();

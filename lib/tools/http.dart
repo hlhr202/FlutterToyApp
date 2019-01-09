@@ -10,4 +10,5 @@ final dio = Dio(options);
 
 class APIQueryBase {
   final clientId = 'SvO3OcT2oRvMpO7TMLthQIjS5ON9UfXY';
+  const APIQueryBase();
 }
